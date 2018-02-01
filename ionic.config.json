@@ -1,0 +1,8 @@
+{
+  "name": "PhotoMoments",
+  "app_id": "3562f19f",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
