@@ -1,0 +1,34 @@
+<ion-content scroll="false">
+  <div class="splash-bg"></div>
+  <div class="splash-info">
+    <div class="splash-logo"></div><br>
+    <div class="splash-intro">
+      <ion-list>
+
+        <ion-item>
+          <ion-label color="light"> &nbsp;
+            <ion-icon name="ios-mail-outline"></ion-icon> &nbsp;</ion-label>
+          <ion-input type="email" name="email" placeholder="hello@correo.com"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label color="light"> &nbsp;
+            <ion-icon name="ios-unlock-outline"></ion-icon> &nbsp;</ion-label>
+          <ion-input type="password" name="password" placeholder="password"></ion-input>
+        </ion-item>
+
+        <div class="buttons-group">
+          <button ion-button outline color="light" block (click)="doLogin()">INICIAR SESIÓN</button>
+          <a class="forgetpass" (click)="doResetPass()">¿Olvidó la contraseña?</a>
+          <div class="hr-inline">
+            <hr color="light">
+            <span color="light"> o también puedes </span>
+            <hr color="light">
+          </div>
+          <button ion-button outline color="light" block (click)="doSignup()" class="login">CREAR UNA CUENTA</button>
+        </div>
+
+      </ion-list>
+    </div>
+  </div>
+</ion-content>
