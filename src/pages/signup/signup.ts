@@ -17,6 +17,6 @@ export class SignupPage {
   }
 
   doSignup() {
-      console.log("Crear una cuenta");
+      this.navCtrl.push('EditPhotoPage');
   }
 }

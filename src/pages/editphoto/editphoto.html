@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Edit Photo
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="photo-wrap">
+    <img class="photo" [src]="photo" alt="photo">
+  </div>
+  <ion-footer>
+    <div class="filters-buttons">
+      <div class="filters-list">
+        <button ion-button outline class="filter" (click)="noFilters()">
+          <div class="">
+            <small>Original</small>
+            <div class="thumbnail">
+              <img class="no-filters" [src]="photo" alt="photo">
+            </div>
+          </div>
+        </button>
+        <button ion-button outline class="filter" (click)="applySutro()">
+          <div class="">
+            <small>Sutro</small>
+            <div class="thumbnail">
+              <img class="sutro" [src]="photo" alt="photo">
+            </div>
+          </div>
+        </button>
+        <button ion-button outline class="filter" (click)="applyWillow()">
+          <div class="">
+            <small>Willow</small>
+            <div class="thumbnail">
+              <img class="willow" [src]="photo" alt="photo">
+            </div>
+          </div>
+        </button>
+        <button ion-button outline class="filter" (click)="applyToaster()">
+          <div class="">
+            <small>Toaster</small>
+            <div class="thumbnail">
+              <img class="toaster" [src]="photo" alt="photo">
+            </div>
+          </div>
+        </button>
+        <button ion-button outline class="filter" (click)="applyLoFi()">
+          <div class="">
+            <small>Lo-Fi</small>
+            <div class="thumbnail">
+              <img class="lo-fi" [src]="photo" alt="photo">
+            </div>
+          </div>
+        </button>
+        <button ion-button outline class="filter" (click)="applyKelvin()">
+          <div class="">
+            <small>Kelvin</small>
+            <div class="thumbnail">
+              <img class="kelvin" [src]="photo" alt="photo">
+            </div>
+          </div>
+        </button>
+        <button ion-button outline class="filter" (click)="applyInkwell()">
+          <div class="">
+            <small>Inkwell</small>
+            <div class="thumbnail">
+              <img class="inkwell" [src]="photo" alt="photo">
+            </div>
+          </div>
+        </button>
+      </div>
+    </div>
+    <button ion-button outline color="dark" block (click)="savePhoto()" class="save">GUARDAR FOTO</button>
+  </ion-footer>
+</ion-content>
